@@ -1,0 +1,11 @@
+<!-- 
+
+    main app container 
+
+-->
+<h5>{{ titulo }}</h5>
+<hr>
+<div class="container text-center my-3">
+    <router-outlet></router-outlet>
+    <div *ngFor="let msg of aMensajes" class="alert alert-sm alert-info">{{msg.text}}</div>
+</div>

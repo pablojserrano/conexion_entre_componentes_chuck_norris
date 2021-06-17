@@ -1,0 +1,32 @@
+<!--
+
+    Hogar
+
+-->
+<div class="container">
+    <form   [formGroup]="fg" 
+            (ngSubmit)="btnEnviarMensaje()">
+        <input  formControlName="ctMensaje" 
+                type="text"
+                class="form-control" />
+    </form>
+</div>
+
+<br>
+
+
+<div class="card mb-3">
+    <h4 class="card-header">Angular 10 Component Communication</h4>
+
+    <div class="col-xs-3">
+        <button (click)="btnChuck_dame_un_mensaje()"
+                class="btn btn-warning">Chuck Norris</button>        
+
+        <button (click)="btnEnviarMensaje()" 
+                class="btn btn-primary">Enviar Mensaje</button>
+                
+        <button (click)="btnLimpiarMensajes()"
+                class="btn btn-danger">Limpiar Mensajes</button>
+    </div>
+            
+</div>
